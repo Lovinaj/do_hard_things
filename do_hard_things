@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# The ./install.sh should be removed later
+
+./install.sh
+
+./do_hard_things.out
