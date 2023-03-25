@@ -1,12 +1,15 @@
+/**
+ * Note this file is for testing purpose,
+ * and will not be in any way connected to the project
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
-int _isnumber(char str[])
+int test (char str[])
 {
-	/*char str;*/
 
-	printf(isalpha(str[1]));
 
 }
 
@@ -14,13 +17,9 @@ int main(void)
 
 {
 
-	char s[1000];
+	char str [100] = "hey", "you", "him"
 
-	printf("Hi >>");
-	scanf("%d", s);
-
-	printf("Hey %d", _isnumber);
-
+	printf("%s", str[3]);
 	return (0);
 
 }
