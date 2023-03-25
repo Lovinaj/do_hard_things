@@ -22,9 +22,10 @@ int questions(void)
 /**
  * _isnumber - User defined function
  *
- * @str: String to check and validate
+ * @str: String variable to check and validate
  *
- * Description: A function to check an validate if input contains letter or not
+ * Description: A function to check and validate
+ *		if input contains letters or not
  *
  * Return: Return 1 or 2
 */
@@ -35,10 +36,21 @@ int _isnumber(char str[])
 	int length = strlen(str);
 
 	for (int i = 0; i < length; i++)
+
 	{
 		if (isalpha(str[i]) != 0)
+
+		/**
+		 * if a character is an integer, the isalpha function returns 0.
+		 * otherwise, it returns 1 and 2
+		 * for alphabets and special characters respectively
+		*/
+
 		{
-			break;
+			break; /**
+				* Breaks loop as soon as a character is not an integer
+				* to avoid junks in system memory
+				*/
 			n = 1;
 		}
 		else
@@ -76,7 +88,9 @@ int main(void)
 
 	if (isnumber == 2)
 	{
+		/* convert the string to integer */
 		num_questions = atoi(str);
+
 		if (num_questions >= 10)
 			questions();
 		else
