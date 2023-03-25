@@ -17,9 +17,14 @@ int main(void)
 
 {
 
-	char str [100] = "hey", "you", "him"
+	char str[][1000] =
+	{
+		"he",
+		"you",
+		"him",
+	};
 
-	printf("%s", str[3]);
+	printf("%s", str[2]);
 	return (0);
 
 }
