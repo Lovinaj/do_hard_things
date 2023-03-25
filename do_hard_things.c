@@ -32,8 +32,9 @@ int questions(void)
 
 int _isnumber(char str[])
 {
-	int n;
-	int length = strlen(str);
+	int length, n;
+
+	length = strlen(str);
 
 	for (int i = 0; i < length; i++)
 
@@ -98,7 +99,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Wrong");
+		printf("\n Invalid input");
 	}
 
 	return (0);
