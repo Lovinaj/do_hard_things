@@ -13,11 +13,17 @@
  * Return: Always return 0
 */
 
-int questions(void)
+const *tests(int num)
 {
 	/* questions here */
-	printf("\n Questions under construction");
-	return (0);
+
+        char *questions[1000] =
+        {
+                "Joy",
+                "hipa",
+                "jip",
+        };
+        return questions[num];
 }
 
 /**
@@ -63,13 +69,14 @@ int _isnumber(char str[])
 	return (n);
 }
 
-int list(char str[100][], int num)
+int list(char str[100][1000], int num)
 {
-	int i, int rndm;
+	int i, rndm;
 	for (i = 0; i <= num; i++)
 	{
-		/* rndm = Function for creating random integers */
-
+		/** rndm = Function for creating random integers */
+		 * int s[] = {};
+		 * for (int j = 0; j 
 	}
 	return (0);
 }
@@ -105,7 +112,7 @@ int main(void)
 		num_questions = atoi(str);
 
 		if (num_questions >= 10)
-			questions();
+			printf("\n Oops!! Question under construction");
 		else
 			printf("\n Invalid input");
 	}
