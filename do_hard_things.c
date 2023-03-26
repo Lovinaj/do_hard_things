@@ -17,6 +17,7 @@ int questions(void)
 {
 	/* questions here */
 	printf("\n Questions under construction");
+	return (0);
 }
 
 /**
@@ -32,11 +33,11 @@ int questions(void)
 
 int _isnumber(char str[])
 {
-	int length, n;
+	int i, length, n;
 
 	length = strlen(str);
 
-	for (int i = 0; i < length; i++)
+	for (i = 0; i < length; i++)
 
 	{
 		if (isalpha(str[i]) != 0)
@@ -60,6 +61,17 @@ int _isnumber(char str[])
 		}
 	}
 	return (n);
+}
+
+int list(char str[100][], int num)
+{
+	int i, int rndm;
+	for (i = 0; i <= num; i++)
+	{
+		/* rndm = Function for creating random integers */
+
+	}
+	return (0);
 }
 
 /**
