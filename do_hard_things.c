@@ -69,14 +69,20 @@ int _isnumber(char str[])
 	return (n);
 }
 
-int list(char str[100][1000], int num)
+int list(int num)
 {
-	int i, rndm;
+	int i, rndm, range;
+	char str;
 	for (i = 0; i <= num; i++)
 	{
-		/** rndm = Function for creating random integers */
-		 * int s[] = {};
-		 * for (int j = 0; j 
+		/* rndm = Function for creating random integers */
+		srand((unsigned)time(null));
+		range = 1000;
+		rndm = rand()%range;
+
+		const char *test = tests(rndm);
+
+		scanf("%[^\n]s", &str);
 	}
 	return (0);
 }
