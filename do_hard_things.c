@@ -46,27 +46,8 @@ int _isnumber(char str[])
 	for (i = 0; i < length; i++)
 
 	{
-		if (isalpha(str[i]) != 0)
-
-		/**
-		 * if a character is an integer, the isalpha function returns 0.
-		 * otherwise, it returns 1 and 2
-		 * for alphabets and special characters respectively
-		*/
-
-		{
-			break; /**
-				* Breaks loop as soon as a character is not an integer
-				* to avoid junks in system memory
-				*/
-			n = 1;
-		}
-		else
-		{
-			n = 2;
-		}
+		return (isalpha(str[i]));
 	}
-	return (n);
 }
 
 int list(int num)
@@ -112,7 +93,7 @@ int main(void)
 
 	int isnumber = _isnumber(str);
 
-	if (isnumber == 2)
+	if (isnumber == 0)
 	{
 		/* convert the string to integer */
 		num_questions = atoi(str);
