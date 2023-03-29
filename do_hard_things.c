@@ -17,13 +17,13 @@ const *tests(int num)
 {
 	/* questions here */
 
-        char *questions[1000] =
-        {
-                "Joy",
-                "hipa",
-                "jip",
-        };
-        return questions[num];
+	char *questions[1000] =
+	{
+		"Joy",
+		"hipa",
+		"jip",
+	};
+	return questions[num];
 }
 
 /**
@@ -58,12 +58,13 @@ int list(int num)
 	{
 		/* rndm = Function for creating random integers */
 		srand((unsigned)time(null));
-		range = 1000;
+		range = 1000; /* Total number of questions to be stored is 1000 */
 		rndm = rand()%range;
 
 		const char *test = tests(rndm);
 
-		scanf("%[^\n]s", &str);
+		printf("%s", test);
+		/* scanf("%[^\n]s", &str); */
 	}
 	return (0);
 }
