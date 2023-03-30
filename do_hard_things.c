@@ -1,73 +1,9 @@
-/* Importing the necessary Libraries*/
+/* Importing the necessary header files*/
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 
-/**
- * questions - User defined fuction, entry for questions
- *
- * Description: Contains the questions to be answered
- *
- * Return: Always return 0
-*/
-
-const *tests(int num)
-{
-	/* questions here */
-
-	char *questions[1000] =
-	{
-		"Joy",
-		"hipa",
-		"jip",
-	};
-	return questions[num];
-}
-
-/**
- * _isnumber - User defined function
- *
- * @str: String variable to check and validate
- *
- * Description: A function to check and validate
- *		if input contains letters or not
- *
- * Return: Return 1 or 2
-*/
-
-int _isnumber(char str[])
-{
-	int i, length, n;
-
-	length = strlen(str);
-
-	for (i = 0; i < length; i++)
-
-	{
-		return (isalpha(str[i]));
-	}
-}
-
-int list(int num)
-{
-	int i, rndm, range;
-	char str;
-	for (i = 0; i <= num; i++)
-	{
-		/* rndm = Function for creating random integers */
-		srand((unsigned)time(null));
-		range = 1000; /* Total number of questions to be stored is 1000 */
-		rndm = rand()%range;
-
-		const char *test = tests(rndm);
-
-		printf("%s", test);
-		/* scanf("%[^\n]s", &str); */
-	}
-	return (0);
-}
+#include "do_hard_things.h"
 
 /**
  * main - Entry point
