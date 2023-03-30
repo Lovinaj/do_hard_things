@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <time.h>
 
 #include "do_hard_things.h"
 
@@ -15,10 +16,6 @@
  *
  * Return: Return isalpha()
 */
-int main(void)
-{
-	return (0);
-}
 
 int _isnumber(char str[])
 {
@@ -43,8 +40,8 @@ int _isnumber(char str[])
 
 int _rand(int range)
 {
-	int range;
-	srand((unsigned)time(null));
+	range;
+	srand((unsigned)time(NULL));
 
         return (rand()%range);
 }

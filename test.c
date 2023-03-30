@@ -3,9 +3,9 @@
 
 int main(void)
 {
-	char str[5] = "Hi";
+	char str[2];
 
-	/* scanf("%s", str); */
+	scanf("%s", str);
 
-	printf("%c", _isnumber(str));
+	printf("%d", _isnumber(str));
 }
