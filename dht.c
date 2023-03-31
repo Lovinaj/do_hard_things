@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "do_hard_things.h"
+#include "dht.h"
 
 /**
  * main - Entry point

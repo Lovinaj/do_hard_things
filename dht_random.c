@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <time.h>
 
-#include "do_hard_things.h"
+#include "dht.h"
 
 /**
  * _isnumber - User defined function
@@ -14,7 +14,7 @@
  * Description: A function to check and validate
  *              if input contains letters or not
  *
- * Return: Return isalpha()
+ * Return: Returns 0 or 1
 */
 
 int _isnumber(char str[])
@@ -26,8 +26,24 @@ int _isnumber(char str[])
         for (i = 0; i < length; i++)
 
         {
-                return (isdigit(str[i]));
-        }
+		/**
+		 * if a character is an integer, the isdigit function returns 0.
+		 * otherwise, it returns a value greater than 0
+		 * for alphabets and special characters respectively
+		*/
+
+		if (isdigit(str[i]) == 0)
+
+			return (0);
+		else
+		{
+			break;	/**
+				 * Breaks loop once a character is not an integer
+				 * to avoid junks in system memory
+				*/
+			return (1);
+		}
+	}
 }
 
 /**
@@ -43,5 +59,5 @@ int _rand(int range)
 	range;
 	srand((unsigned)time(NULL));
 
-        return (rand()%range);
+	return (rand()%range);
 }

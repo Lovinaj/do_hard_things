@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc do_hard_things.c -o do_hard_things.out
+gcc dht.c -o dht.out
