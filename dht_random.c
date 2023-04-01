@@ -32,25 +32,25 @@ int _isnumber(char str[])
 		 * for alphabets and special characters respectively
 		*/
 
-		if (isdigit(str[i]) == 0)
+		if (isdigit(str[i]) >= 0)
 
-			return (0);
+			return (1);
 		else
 		{
 			break;	/**
 				 * Breaks loop once a character is not an integer
 				 * to avoid junks in system memory
 				*/
-			return (1);
+			return (0);
 		}
 	}
 }
 
 /**
- * _rand - User defined function
+ * _rand - Function to return a random number
  *
  * @range - First and only parameter, the total number of questions
- *
+ * Description: Returns a random number between 0 and the total number of questions
  * Return: Return question[rndm]
 */
 
