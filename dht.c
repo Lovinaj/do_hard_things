@@ -39,6 +39,7 @@ int main(void)
 		{
 			for (int i = 0; i <= num_questions; i++)
 			{
+				int range = 1000;
 				const char *question = questions(_rand(range), range);
 				printf("%[^\n]s", question);
 
