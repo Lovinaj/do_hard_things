@@ -32,7 +32,7 @@ int _isnumber(char str[])
 		 * for alphabets and special characters respectively
 		*/
 
-		if (isdigit(str[i]) >= 0)
+		if (isdigit(str[i]) > 0)
 
 			return (1);
 		else
