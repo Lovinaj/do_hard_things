@@ -15,11 +15,10 @@
  * Return: Return question
 */
 
-const char *question(int num, int range)
+const char *question(int num)
 {
 	/* questions here */
-
-	char *questions[range] = {
+	char *questions[1000] = {
 
 		"Oops! Question under construction.",
 		"Oops! Question under construction.",

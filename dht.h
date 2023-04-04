@@ -5,7 +5,7 @@
 
 /* Prototypes for dht_questions.c */
 
-const char *question(int num, int range);
+const char *question(int num);
 
 /* Prototypes for dht_random.c */
 

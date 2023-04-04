@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# The ./install.sh should be removed later
-
-./install.sh
-
 ./dht.out

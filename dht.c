@@ -35,30 +35,26 @@ int main(void)
 		/* convert the string to integer */
 		num_questions = atoi(str);
 
-		if (num_questions >= 10)
+		if (num_questions >= 10) /* Minimum required is 10 questions */
 		{
 			for (int i = 0; i <= num_questions; i++)
 			{
-				int range = 1000;
-				const char *question = questions(_rand(range), range);
-				printf("%[^\n]s", question);
+				int range = 1000, random = _rand(range);
 
+				/* Display a question */
+				const char *quest = question(random);
+				printf("%s %d", quest, random);
+
+				/* Creating a string variable to accept answer from user */
 				char ans[1];
 				scanf("%s", ans);
 
-				/**
-				 * if (_rand(range) = 1 || 5 || 8 || ...)
-				{
-					if (ans == a)
-						printf("You got that right")
-					else
-						printf("Oops! The right answer is a")
-				}
-				 * Creating a separate fuction for this would be preferable
-				 * Especially in a separate file
-				*/
+				/* Check if the answer is correct */
+				const char *checker = options(random, ans);
+				printf("%s\n", checker);
+			}
 		}
-			printf("\n Oops!! Question under construction");
+
 		else
 
 			printf("\n Invalid input");

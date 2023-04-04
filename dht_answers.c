@@ -17,7 +17,7 @@ const char *options(int num, char str[])
 			return ("Success");
 		else
 			return ("Failed");
-	else if (num == ..........)
+	else if (num == 34)
 		if (str = "d")
 			return ("Success");
 		else
