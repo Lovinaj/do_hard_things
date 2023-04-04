@@ -8,7 +8,6 @@
  * @num: First parameter - Locates a paticular question
  *			   by it's address in the list,
  *			   expected to be a generated random number
- * @range: Second parameter - The total number of questions in the list
  *
  * Description: Contains the questions to be answered
  *
