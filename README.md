@@ -9,9 +9,11 @@ PROJECT NATURE: Open source
 
 AUTHORED BY: Ohanyere Venetius Onyekachukwu
 NICKNAME: Twin J
-OTHER NAMES: Junior, Mduabuchi
+OTHER NAMES: Junior, Maduabuchi
 
 WHATSAPP NO.: 07089331525, 09134301656
-WEBSITE: www.twinjnr.blogspot.com
+WEBSITE: https:twinjnr.blogspot.com
+LINKEDIN: https://linkedin.com/in/juniorohanyere
+EMAIL: junohanyere@gmail.com
 
 ADDRESS: 3, Ifelodun street, Estate Onipanu, Ado-Odo Ota. Ogun State. Nigeria
