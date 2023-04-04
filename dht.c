@@ -17,53 +17,71 @@ int main(void)
 {
 	printf("Welcome To Do_Hard_Things\n");
 	printf("Try to answer the questions YOURSELF, ");
-	printf("so you can know how much your improving.");
-	printf("YOU ARE NOT FORCED!\n\n");
+	printf("so you can know how much you're improving.");
+	printf("YOU ARE NOT FORCED!\n");
+	printf("Also note that you will be penalized ");
+	printf("for wrong answers\n\n");
 
-	printf("Please enter your desired number of questions. ");
-	printf("The recommended is also the minimum you can answer, which is 10 >> ");
+	int flag; /**
+		   * Variable to check whether ctrl-D is entered
+		   * If ctrl-D is entered, the program exits
+		   * Also used to catch the EOF resulting from ctrl-D
+		   * which results in infinite loop
+		  */
 
-	int num_questions, length;
-	char str[1000];
-
-	scanf("%[^\n]s", str);
-
-	int isnumber = _isnumber(str);
-
-	if (isnumber == 1)
+	while (flag != EOF)
 	{
-		/* convert the string to integer */
-		num_questions = atoi(str);
+		printf("Please enter your desired number of questions. ");
+		printf("The recommended is also the minimum you can answer, ");
+		printf("which is 10 >> ");
 
-		if (num_questions >= 10) /* Minimum required is 10 questions */
+		int num_questions, length;
+		char str[1000];
+
+		flag = scanf("%s", str);
+
+		int isnumber = _isnumber(str);
+
+		if (isnumber == 1)
 		{
-			for (int i = 0; i <= num_questions; i++)
+			/* convert the string to integer */
+			num_questions = atoi(str);
+
+			if (num_questions >= 10) /* Minimum required is 10 questions */
 			{
-				int range = 1000, random = _rand(range);
+				for (int i = 0; i < num_questions; i++)
+				{
+					int range = 1000, random = _rand(range), j = i + 1;
 
-				/* Display a question */
-				const char *quest = question(random);
-				printf("%s", quest);
+					/* Display a question */
+					const char *quest = question(random);
 
-				/* Creating a string variable to accept answer from user */
-				char ans[1];
-				scanf("%s", ans);
+					printf("\n");
+					printf("%d. %s\n\n ", j, quest);
 
-				/* Check if the answer is correct */
-				const char *checker = options(random, ans);
-				printf("%s\n", checker);
+					/* Creating a string variable to accept answer from user */
+					char ans[1];
+
+					flag = scanf("%s", ans);
+
+					if (flag == EOF)
+						break;
+
+					/* Check if the answer is correct */
+					const char *checker = options(random, ans);
+
+					printf(" %s\n", checker);
+				}
 			}
-		}
 
+			else
+
+				printf(" Invalid input\n");
+		}
 		else
 
-			printf("\n Invalid input");
+			printf(" Invalid input\n");
 	}
-	else
-
-		printf("\n Invalid input");
-
 
 	return (0);
-
 }
