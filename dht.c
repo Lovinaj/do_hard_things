@@ -43,7 +43,7 @@ int main(void)
 
 				/* Display a question */
 				const char *quest = question(random);
-				printf("%s %d", quest, random);
+				printf("%s", quest);
 
 				/* Creating a string variable to accept answer from user */
 				char ans[1];
