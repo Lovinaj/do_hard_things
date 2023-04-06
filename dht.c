@@ -80,10 +80,10 @@ int main(void)
 					 * The reason, I could not decipher
 					*/
 
-					int conv_ans = atoi(ans);
+					/*int conv_ans = atoi(ans);*/
 
 					/* Check if the answer is correct */
-					const char *checker = options(random, conv_ans);
+					const char *checker = options(random, ans);
 
 					printf(" %s\n", checker);
 				}
