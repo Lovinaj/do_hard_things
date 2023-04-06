@@ -51,7 +51,7 @@ int main(void)
 			{
 				for (int i = 0; i < num_questions; i++)
 				{
-					int range = 1000, random = _rand(range), j = i + 1;
+					int range = 6, random = _rand(range), j = i + 1;
 
 					/* Display a question */
 					const char *quest = question(random);
@@ -67,8 +67,17 @@ int main(void)
 					if (flag == EOF)
 						break;
 
+					/**
+					 * Need to convert the string input to integer
+					 * since using an int input directly
+					 * seems to create an infinite loop
+					 * The reason, I could not decipher
+					*/
+
+					int conv_ans = atoi(ans);
+
 					/* Check if the answer is correct */
-					const char *checker = options(random, ans);
+					const char *checker = options(random, conv_ans);
 
 					printf(" %s\n", checker);
 				}

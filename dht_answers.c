@@ -1,24 +1,24 @@
 #include "dht.h"
 
-const char *options(int num, char str[])
+const char *options(int num, int num1)
 {
-	if (num == 1 || 5 || 8 || 16)
-		if (str == "a")
+	if (num == 1)
+		if (num = 'a')
 			return ("Success");
 		else
 			return ("Failed");
-	else if (num == 2 || 9 || 32 || 50 || 96)
-		if (str == "b")
+	else if (num == 2)
+		if (num = 'b')
 			return ("Success");
 		else
 			return ("Failed");
-	else if (num == 3 || 4|| 6 || 7 || 10)
-		if (str == "c")
+	else if (num == 3)
+		if (num = 'c')
 			return ("Success");
 		else
 			return ("Failed");
 	else if (num == 34)
-		if (str = "d")
+		if (num = 'd')
 			return ("Success");
 		else
 			return ("Failed");
