@@ -44,7 +44,7 @@ int main(void)
 			exit(0);
 
 		int isnumber = _isnumber(str);
-		printf("%d", isnumber);
+
 		if (isnumber == 1)
 		{
 			/* convert the string to integer */
@@ -52,6 +52,9 @@ int main(void)
 
 			if (num_questions >= 10) /* Minimum required is 10 questions */
 			{
+				printf(" You Requested To Answer %d Questions\n", num_questions);
+				printf("\n");
+
 				for (int i = 0; i < num_questions; i++)
 				{
 					int range = 6, random = _rand(range), j = i + 1;
