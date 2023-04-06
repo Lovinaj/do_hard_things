@@ -19,7 +19,15 @@ const char *question(int num)
 	/* questions here */
 	char *questions[1000] = {
 
-		"What is the right statement to print Hello, World to standard output in C ?",
+		/* index 0 */
+
+		"What is the right statement to print Hello, World to standard output in C ?"
+		"\n\n"
+		"a. printf(\"Hello, World\");\n"
+		"b. print(\"Hello, World\")\n"
+		"c. printf(Hello, World);\n"
+		"d. I don't know",
+
 		"How do you initialize an integer in C ?",
 		"What is the use of printf statement in C ?",
 		"What is the value of the variable str here ?",

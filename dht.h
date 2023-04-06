@@ -14,6 +14,6 @@ int _rand(int range);
 
 /* Prototypes for dht_answers.c */
 
-const char *options(int num, char str[]);
-
+const char *options(int num);
+const char *answers(int num, char str[]);
 #endif /* DHT_H */

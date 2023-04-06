@@ -83,7 +83,7 @@ int main(void)
 					/*int conv_ans = atoi(ans);*/
 
 					/* Check if the answer is correct */
-					const char *checker = options(random, ans);
+					const char *checker = answers(random, ans);
 
 					printf(" %s\n", checker);
 				}
