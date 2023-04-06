@@ -1,27 +1,20 @@
+#include <string.h>
+
 #include "dht.h"
 
-const char *options(int num, int num1)
+const char *options(int num, char str[])
 {
-	if (num == 1  || num == 5)
-		if (num1 = 'a')
-			return ("Success");
-		else
-			return ("Failed");
-	else if (num == 2 || num == 0)
-		if (num1 = 'b')
-			return ("Success");
-		else
-			return ("Failed");
-	else if (num == 3)
-		if (num1 = 'c')
-			return ("Success");
-		else
-			return ("Failed");
-	else if (num == 4)
-		if (num1 = 'd')
-			return ("Success");
-		else
-			return ("Failed");
+	if ((num == 0 || num == 1
+	|| num ==  3)
+	&& (strcmp(str, "a") == 0))
+		return ("Success");
+	else if ((num == 2 || num == 4)
+	&& (strcmp(str, "b") == 0))
+		return ("Success");
+	else if ((num == 5) && (strcmp(str, "c") == 0))
+		return ("Success");
+	else if ((num == 6) && (strcmp(str, "d") == 0))
+		return ("Success");
 	else
-		return ("An error occured");
+		return ("Failed");
 }
