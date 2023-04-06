@@ -36,14 +36,18 @@ int _isnumber(char str[])
 			flag = 1;
 		else
 		{
+			flag = 0;
 			break;	/**
 				 * Breaks loop once a character is not an integer
 				 * to avoid junks in system memory
 				*/
-			flag = 0;
 		}
+
 	}
-	return (flag);
+	if (flag == 1)
+		return (1);
+	else
+		return (0);
 }
 
 /**
