@@ -3,6 +3,7 @@
 
 # Program files
 test.c
+.test.c.swp
 
 # Object files
 *.o
