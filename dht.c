@@ -40,8 +40,11 @@ int main(void)
 
 		flag = scanf("%s", str);
 
-		int isnumber = _isnumber(str);
+		if (flag == EOF)
+			exit(0);
 
+		int isnumber = _isnumber(str);
+		printf("%d", isnumber);
 		if (isnumber == 1)
 		{
 			/* convert the string to integer */
@@ -65,7 +68,7 @@ int main(void)
 					flag = scanf("%s", ans);
 
 					if (flag == EOF)
-						break;
+						exit(0);
 
 					/**
 					 * Need to convert the string input to integer
@@ -85,11 +88,11 @@ int main(void)
 
 			else
 
-				printf(" Invalid input\n");
+				printf("\n Invalid input\n\n");
 		}
 		else
 
-			printf(" Invalid input\n");
+			printf("\n Invalid input\n\n");
 	}
 
 	return (0);
