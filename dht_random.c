@@ -19,11 +19,11 @@
 
 int _isnumber(char str[])
 {
-        int i, length;
+        int length, flag;
 
         length = strlen(str);
 
-        for (i = 0; i < length; i++)
+        for (int i = 0; i < length; i++)
 
         {
 		/**
@@ -32,18 +32,18 @@ int _isnumber(char str[])
 		 * for alphabets and special characters respectively
 		*/
 
-		if (isdigit(str[i]) > 0)
-
-			return (1);
+		if (isdigit(str[i]))
+			flag = 1;
 		else
 		{
 			break;	/**
 				 * Breaks loop once a character is not an integer
 				 * to avoid junks in system memory
 				*/
-			return (0);
+			flag = 0;
 		}
 	}
+	return (flag);
 }
 
 /**
