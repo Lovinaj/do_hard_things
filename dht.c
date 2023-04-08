@@ -73,15 +73,6 @@ int main(void)
 					if (flag == EOF)
 						exit(0);
 
-					/**
-					 * Need to convert the string input to integer
-					 * since using an int input directly
-					 * seems to create an infinite loop
-					 * The reason, I could not decipher
-					*/
-
-					/*int conv_ans = atoi(ans);*/
-
 					/* Check if the answer is correct */
 					const char *checker = answers(random, ans);
 
