@@ -62,7 +62,6 @@ int _isnumber(char str[])
 
 int _rand(int range)
 {
-	range;
 	srand((unsigned int)time(NULL));
 
 	return (rand() % range);
