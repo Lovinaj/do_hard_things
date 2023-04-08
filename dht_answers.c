@@ -17,17 +17,26 @@
 
 const char *answers(int num, char str[])
 {
-	if ((num == 0 || num == 1
-	|| num ==  3)
+	if ((num == 0 || num == 1 || num ==  3)
 	&& strcmp(str, "a") == 0)
-		return ("Success");
+		return ("Passed");
 	else if ((num == 2 || num == 4)
 	&& strcmp(str, "b") == 0)
-		return ("Success");
+		return ("Passed");
 	else if ((num == 5) && strcmp(str, "c") == 0)
-		return ("Success");
+		return ("Passed");
 	else if (strcmp(str, "d") == 0)
-		return ("Cool");
+		if (num == 0 || num == 1 || num == 3)
+			return ("Better luck next time [a]");
+		else if (num == 2 || num == 4)
+			return ("Better luck next time [b]");
+		else
+			return ("Better luck next time [c]");
 	else
-		return ("Failed");
+		if (num == 0 || num == 1 || num == 3)
+			return ("Failed [a]");
+		else if (num == 2 || num == 4)
+			return ("Failed [b]");
+		else
+			return ("Failed [c]");
 }
