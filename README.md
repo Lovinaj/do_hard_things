@@ -15,7 +15,7 @@ This project shall be loaded with lots of questions based on the programming lan
 ## Contact
 
 - **whatsapp:** +234 708 933 1525
-- [email](junohanyere@gmail.com)
+- **email:** junohanyere@gmail.com
 - [blog](https://twinjnr.blogspot.com)
 - [twitter](https://twitter.com/JuniorOhanyere)
 - [linkedin](https://www.linkedin.com/in/juniorohanyere)
