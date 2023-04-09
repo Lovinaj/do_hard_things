@@ -67,6 +67,13 @@ int _rand(int range)
 	return (rand() % range);
 }
 
+/**
+ * questions_to_answer - function to accept number of questions,
+ *			 to be answered, from user
+ *
+ * Return: return nothing
+*/
+
 void questions_to_answer(void)
 {
 	while (1)
@@ -108,6 +115,21 @@ void questions_to_answer(void)
 			printf("\n Invalid input\n\n");
 	}
 }
+
+/**
+ * show_questions - function to display the questions to the standard output
+ * @num: number of questions entered by user
+ *	 in the questions_to_answer function
+ *
+ * Description: displays the quetions based on the amount of question
+ *		the user specified. Then validates if the answer
+ *		corresponding to a question is correct
+ *		if correct, the user is credited with a +1 mark
+ *		if incorrect, a -1 mark is added. If the user answers with the option 'd',
+ *		no mark will be added nor deducted
+ *
+ * Return: return nothing
+*/
 
 void show_questions(int num)
 {
