@@ -14,7 +14,7 @@ This project shall be loaded with lots of questions based on the programming lan
 
 ## Contact
 
-- [whatsapp](07089331525)
+- **whatsapp:** +234 708 933 1525
 - [email](junohanyere@gmail.com)
 - [blog](https://twinjnr.blogspot.com)
 - [twitter](https://twitter.com/JuniorOhanyere)
@@ -27,6 +27,6 @@ This project shall be loaded with lots of questions based on the programming lan
 
 ## Full Name of Author
 
-**Name:** `Venetius` `Ohanyere` `Onyekachukwu`
-**Nickname:** `Twin J`
-**Other names:** `Junior`, `Maduabuchi`
+- **Name:** `Venetius` `Ohanyere` `Onyekachukwu`
+- **Nickname:** `Twin J`
+- **Other names:** `Junior`, `Maduabuchi`
