@@ -11,9 +11,12 @@ const char *question(int num);
 
 int _isnumber(char str[]);
 int _rand(int range);
+void questions_to_answer(void);
+void show_questions(int num);
 
 /* Prototypes for dht_answers.c */
 
 const char *options(int num);
 const char *answers(int num, char str[]);
+
 #endif /* DHT_H */
