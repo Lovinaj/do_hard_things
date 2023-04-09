@@ -66,3 +66,34 @@ int _rand(int range)
 
 	return (rand() % range);
 }
+
+int questions_to_answer(void)
+{
+	int num_questions, flag;
+	char str[1000];
+
+	flag = scanf("%s", str);
+
+	if (flag == EOF)
+		exit(EXIT_SUCCESS);
+
+	int isnumber = _isnumber(str);
+
+	if (isnumber == 1)
+	{
+		/* convert the string to integer */
+		num_questions = atoi(str);
+
+		if (num_questions >= 10) /* Minimum required is 10 questions */
+		{
+			printf(" You Requested To Answer %d Questions\n", num_questions);
+			printf("\n");
+
+		}
+		else
+			printf("\n Invalid input\n\n");
+	}
+	else
+		printf("\n Invalid input\n\n");
+	return (0);
+}
