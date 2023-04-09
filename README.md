@@ -1,6 +1,6 @@
 This project  is dedicated to the alx software engineering students.
 
-And the project is be named after one of alx popular terms, [Do_Hard_Things].
+And the project is be named after one of alx popular terms, Do_Hard_Things.
 
 - PROJECT NAME: Do_Hard_Things
 
