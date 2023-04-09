@@ -1,6 +1,6 @@
 ## About
 
-`do_hard_things` is an open source project distributed under the `GPL-3.0 license` terms. Owned and authored by [Junior Ohanyere](https://www.linkedin.com/in/juniorohanyere)
+`do_hard_things` is an open source project distributed under the `GPL-3.0 license` terms. Owned and authored by [Twin J](https://www.linkedin.com/in/juniorohanyere)
 
 This project is currently undergoing development and has no official release yet, but I hope to get it ready sooner.
 
