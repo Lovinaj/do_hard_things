@@ -1,22 +1,32 @@
-This project  is dedicated to the alx software engineering students.
+## About
 
-And the project is be named after one of alx popular terms, Do_Hard_Things.
+`do_hard_things` is an open source project distributed under the `GPL-3.0 license` terms. Owned and authored by [Junior Ohanyere](https://www.linkedin.com/in/juniorohanyere)
 
-- PROJECT NAME: Do_Hard_Things
+This project is currently undergoing development and has no official release yet, but I hope to get it ready sooner.
 
-- PROJECT STARTED: 20/03/2023, 8:05 am WAT
+[Learn more](https://twinjnr.blogspot.com) about **do_hard_things**
 
-- PROJECT OVERVIEW: The program is launched, and the user is welcomed warmly, with a messsge to input a desired number of questions the user would like to test himself with a minimum of 10 questions. As the user answers each questions, there should be an alert message whether the user answered correctly or not. If answered wrongly, the alert message should contain the right answer to the question. The project contains three sections, The Basic section, The Advanced section, and The Random section. The user would the required to choose between the basic section, advanced section, and the random section after inputing the number of questions to be answered. The basic section contains questions with optioins to the answers. The advanced section contains questions with no options to the answers, hence a specific approach to answer the questions must be followed, a man page should be available to guide the user on the approach. The random sections contains a mixture of the basic section and the advanced section. At the end of each test, the program should output the users progress by displaying the number of wins and loses, in plain and by percentage. The program should also keep track of the user's progress monthly by percentage or otherwise. The program never exits until the user enters "exit" or "ctrl d"
+## Overview
 
-- PROJECT NATURE: Open source
+This project shall be loaded with lots of questions based on the programming languages on earth.
 
-- AUTHORED BY: Ohanyere Venetius Onyekachukwu
-- NICKNAME: Twin J
-- OTHER NAMES: Junior, Maduabuchi
+**Contribution** and **Support** is appreciated.
 
-- WHATSAPP NO.: 07089331525, 09134301656
-- [WEBSITE](https:twinjnr.blogspot.com)
-- [LINKEDIN](https://linkedin.com/in/juniorohanyere)
-- [EMAIL](junohanyere@gmail.com)
+## Contact
 
-- ADDRESS: 3, Ifelodun street, Estate Onipanu, Ado-Odo Ota. Ogun State. Nigeria
+- [whatsapp](07089331525)
+- [email](junohanyere@gmail.com)
+- [blog](https://twinjnr.blogspot.com)
+- [twitter](https://twitter.com/JuniorOhanyere)
+- [linkedin](https://www.linkedin.com/in/juniorohanyere)
+
+## Address info
+
+- 3, Ifelodun street. Estate Onipanu, Ado-Odo Ota. Ogun state. Nigeria
+- 24, Ogo Oluwa street. Ilepa, Ifo. Ogun state. Nigeria
+
+## Full Name of Author
+
+**Name:** `Venetius` `Ohanyere` `Onyekachukwu`
+**Nickname:** `Twin J`
+**Other names:** `Junior`, `Maduabuchi`
