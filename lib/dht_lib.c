@@ -104,16 +104,16 @@ void questions_to_answer(void)
 
 			if (num_questions >= 10) /* Minimum required is 10 questions */
 			{
-				printf(" You Requested To Answer %d Questions\n", num_questions);
+				printf("\n\t\033[0;32mYou Requested To Answer %d Questions\033[0m\n", num_questions);
 				printf("\n");
 
 				show_questions(num_questions);
 			}
 			else
-				printf("\n Invalid input\n\n");
+				printf("\n \033[0;31mInvalid input\033[0m\n\n");
 		}
 		else
-			printf("\n Invalid input\n\n");
+			printf("\n \033[0;31mInvalid input\033[0m\n\n");
 	}
 }
 
