@@ -1,9 +1,10 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <time.h>
-
+#include "../answers/dht_answers_c.h"
+#include "../questions/dht_questions_c.h"
 #include "dht_lib.h"
 
 /**
