@@ -134,10 +134,10 @@ void questions_to_answer(void)
 void show_questions(int num)
 {
 	int score = 0, flag;
-	char *pass = "Passed";
-	char *fail_a = "Failed [a]";
-	char *fail_b = "Failed [b]";
-	char *fail_c = "Failed [c]";
+	char *pass = "\033[0;32mPassed\033[0m";
+	char *fail_a = "\033[0;31mFailed \033[0;32m[a]\033[0m";
+	char *fail_b = "\033[0;31mFailed \033[0;32m[b]\033[0m";
+	char *fail_c = "\033[0;31mFailed \033[0;32m[c]\033[0m";
 
 	for (int i = 0; i < num; i++)
 	{

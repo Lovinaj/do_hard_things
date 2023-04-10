@@ -19,25 +19,25 @@ const char *answers(int num, char str[])
 {
 	if ((num == 0 || num == 1 || num ==  3)
 	&& strcmp(str, "a") == 0)
-		return ("Passed");
+		return ("\033[0;32mPassed\033[0m");
 	else if ((num == 2 || num == 4)
 	&& strcmp(str, "b") == 0)
-		return ("Passed");
+		return ("\033[0;32mPassed\033[0m");
 	else if ((num == 5 || num == 6)
 	&& strcmp(str, "c") == 0)
-		return ("Passed");
+		return ("\033[0;32mPassed\033[0m");
 	else if (strcmp(str, "d") == 0)
 		if (num == 0 || num == 1 || num == 3)
-			return ("Better luck next time [a]");
+			return ("\033[0;33mBetter luck next time \033[0;32m[a]\033[0m");
 		else if (num == 2 || num == 4)
-			return ("Better luck next time [b]");
+			return ("\033[0;33mBetter luck next time \033[0;32m[b]\033[0m");
 		else
-			return ("Better luck next time [c]");
+			return ("\033[0;33mBetter luck next time \033[0;32m[c]\033[0m");
 	else
 		if (num == 0 || num == 1 || num == 3)
-			return ("Failed [a]");
+			return ("\033[0;31mFailed \033[0;32m[a]\033[0m");
 		else if (num == 2 || num == 4)
-			return ("Failed [b]");
+			return ("\033[0;31mFailed \033[0;32m[b]\033[0m");
 		else
-			return ("Failed [c]");
+			return ("\033[0;31mFailed \033[0;32m[c]\033[0m");
 }
