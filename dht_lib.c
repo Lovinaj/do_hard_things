@@ -171,5 +171,5 @@ void show_questions(int num)
 	}
 	float percentage = ((float) score / num) * 100;
 
-	printf("%d\n%.f%\n%d\n", score, percentage, num);
+	printf("\n\tScore = %d\n\tPercentage = %.f%\n\n", score, percentage, num);
 }

@@ -55,11 +55,27 @@ const char *question(int num)
 
 		/* index 4 */
 
-		"Which of the following statements is correct ?",
+		"Which of the following statements is correct ?\n\n"
+		"a. int num\n   scanf(\"%d\", &num);\n\n"
+		"b. int num;\n   scanf(\"%d\", &num);\n\n"
+		"c. int num\n   scanf(\"%d\", &num)\n\n"
+		"d. I don't know",
 
 		/* index 5 */
 
-		"What is the right order for compilation of a C program ?",
+		"What is the right order for compilation of a C program ?\n\n"
+		"a. preprocess, compile, link, assembly\n"
+		"b. preprocess, assembly, compile, link\n"
+		"c. preprocess, compile, assembly, link\n"
+		"d. I don't know",
+
+		/* index 6 */
+
+		"Which of the following is a valid for statement in C ?\n\n"
+		"a. for (int a = 0; a < b; a ++)\n{\n\tprintf(\"%d\n\", a);\n}\n"
+		"b. for (int a == 0; a < b; a++)\n{\n\tprintf(\"%d\n\", a);\n}\n"
+		"c. for (int a = 0; a < b; a++)\n{\n\tprintf(\"%d\n\", a);\n}\n"
+		"d. I don't know",
 	};
 	return (questions[num]);
 }

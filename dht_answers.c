@@ -23,7 +23,8 @@ const char *answers(int num, char str[])
 	else if ((num == 2 || num == 4)
 	&& strcmp(str, "b") == 0)
 		return ("Passed");
-	else if ((num == 5) && strcmp(str, "c") == 0)
+	else if ((num == 5 || num == 6)
+	&& strcmp(str, "c") == 0)
 		return ("Passed");
 	else if (strcmp(str, "d") == 0)
 		if (num == 0 || num == 1 || num == 3)
