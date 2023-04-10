@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include "dht.h"
-
 /**
  * question - User defined fuction, entry for questions
  *
