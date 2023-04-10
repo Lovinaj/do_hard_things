@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "dht.h"
+#include "../lib/dht_lib.h"
 
 /**
  * main - Entry point
