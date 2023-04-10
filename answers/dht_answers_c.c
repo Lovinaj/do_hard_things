@@ -1,7 +1,5 @@
 #include <string.h>
 
-#include "dht.h"
-
 /**
  * answers - function to validate answer
  * @num: generated random integer
