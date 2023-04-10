@@ -2,7 +2,7 @@
 
 `do_hard_things` is an open source project distributed under the `GPL-3.0 license` terms. Owned and authored by [Twin J](https://www.linkedin.com/in/juniorohanyere)
 
-This project is currently undergoing development and has no official release yet, but I hope to get it ready sooner.
+This project is currently undergoing development. A `pre-release` of the program has been published. No official release yet, but I hope to get it ready sooner.
 
 [Learn more](https://twinjnr.blogspot.com) about **do_hard_things**
 
