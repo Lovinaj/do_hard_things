@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <time.h>
 
-#include "dht.h"
+#include "dht_lib.h"
 
 /**
  * _isnumber - User defined function
@@ -52,19 +52,19 @@ int _isnumber(char str[])
 
 /**
  * _rand - Function to return a random number
- * @range: First and only parameter, the total number of questions
+ * @num: First and only parameter, the total number of questions
  *
  * Description: Returns a random number
  *		between 0 and the total number of questions
  *
- * Return: Return question[rndm]
+ * Return: Return random number
 */
 
-int _rand(int range)
+int _rand(int num)
 {
 	srand((unsigned int)time(NULL));
 
-	return (rand() % range);
+	return (rand() % num);
 }
 
 /**
