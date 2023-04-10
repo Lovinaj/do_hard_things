@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc dht.c dht_lib.c dht_questions.c dht_answers.c -o dht.out
+gcc ../dht/dht.c ../lib/dht_lib.c ../questions/dht_questions_c.c ../answers/dht_answers_c.c -o ../dht.out
