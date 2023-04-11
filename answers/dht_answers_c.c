@@ -18,7 +18,7 @@ const char *answers(int num, char str[])
 	if ((num == 0 || num == 1 || num ==  3)
 	&& strcmp(str, "a") == 0)
 		return ("\033[0;32mPassed\033[0m");
-	else if ((num == 2 || num == 4 || num == 9 )
+	else if ((num == 2 || num == 4 || num == 9)
 	&& strcmp(str, "b") == 0)
 		return ("\033[0;32mPassed\033[0m");
 	else if ((num == 5 || num == 6 || num == 7 || num == 8 || num == 10)
