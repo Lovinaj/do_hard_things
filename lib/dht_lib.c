@@ -88,10 +88,10 @@ void questions_to_answer(void)
 
 		flag = scanf("%s", str);
 
-		if (flag == EOF) /**
-				  * checks if ctrl-D is entered
-				  * if so, the program exits
-				 */
+		if (flag == EOF)	/**
+					 * checks if ctrl-D is entered
+					 * if so, the program exits
+					*/
 
 			exit(EXIT_SUCCESS);
 
@@ -102,9 +102,10 @@ void questions_to_answer(void)
 			/* convert the string to integer */
 			num_questions = atoi(str);
 
-			if (num_questions >= 10) /* Minimum required is 10 questions */
+			if (num_questions >= 10)	/* Minimum required is 10 questions */
 			{
-				printf("\n\t\033[0;32mYou Requested To Answer %d Questions\033[0m\n", num_questions);
+				printf("\n\t\033[0;32m");
+				printf("You Requested To Answer %d Questions\033[0m\n", num_questions);
 				printf("\n");
 
 				show_questions(num_questions);
