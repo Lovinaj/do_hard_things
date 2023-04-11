@@ -142,7 +142,7 @@ void show_questions(int num)
 
 	for (int i = 0; i < num; i++)
 	{
-		int range = 6, random = _rand(range), j = i + 1;
+		int range = 10, random = _rand(range), j = i + 1;
 
 		/* Display a question */
 		const char *_question = question(random);
